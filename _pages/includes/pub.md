@@ -22,7 +22,8 @@ The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026(**CVPR**
 
 [**Adaptive Visual Autoregressive Acceleration via Dual-Linkage Entropy Analysis**](https://arxiv.org/abs/2602.01345)
 
-Yu Zhang, **Jingyi Liu**, Feng Liu, Duoqian Miao, Qi Zhang, Kexue Fu, Changwei Wang, Longbing Cao \\
+Yu Zhang, **Jingyi Liu†**, Feng Liu, Duoqian Miao*, Qi Zhang, Kexue Fu, Changwei Wang, Longbing Cao \\
+† Project Lead, * Corresponding Author \\
 arXiv preprint, 2026.
 
 📄 [**Paper**](https://arxiv.org/pdf/2602.01345)
