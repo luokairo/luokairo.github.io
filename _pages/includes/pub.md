@@ -37,7 +37,7 @@ arXiv preprint, 2026.
 [**Enhancing Quantization for Visual AutoRegressive Generation via Uncertainty Identification**](#)
 
 **Jingyi Liu**, Guangyao Xiong, Shuxia Ren*, Ruoyang Gao, Linkun Yu, Kexue Fu \\
-*Corresponding Author \\
+* Corresponding Author \\
 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**), 2026 (**Oral**).  
 
 <!-- 📄 [**Paper**](#) -->
