@@ -10,7 +10,7 @@
 
 Yu Zhang, **Jingyi Liu†**, Feng Liu, Duoqian Miao*, Qi Zhang, Kexue Fu, Changwei Wang, Longbing Cao \\
 † Project Lead, * Corresponding Author \\
-Forty-Third International Conference on Machine Learning (**ICML 2026**), 2026. (CCF-A)
+Forty-Third International Conference on Machine Learning (**ICML**), 2026. (CCF-A)
 
 📄 [**Paper**](https://arxiv.org/pdf/2602.01345)
 
@@ -39,7 +39,6 @@ The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026(**CVPR**
 [**Enhancing Quantization for Visual AutoRegressive Generation via Uncertainty Identification**](#)
 
 **Jingyi Liu**, Guangyao Xiong, Shuxia Ren†, Ruoyang Gao, Linkun Yu, Kexue Fu \\
-
 † Corresponding Author \\
 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**), 2026 (**Oral**).  
 
