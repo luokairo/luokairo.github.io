@@ -24,7 +24,7 @@ The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026(**CVPR**
 
 Yu Zhang, **Jingyi Liu†**, Feng Liu, Duoqian Miao*, Qi Zhang, Kexue Fu, Changwei Wang, Longbing Cao \\
 † Project Lead, * Corresponding Author \\
-arXiv preprint, 2026.
+Forty-Third International Conference on Machine Learning (**ICML 2026**), 2026. (CCF-A)
 
 📄 [**Paper**](https://arxiv.org/pdf/2602.01345)
 
