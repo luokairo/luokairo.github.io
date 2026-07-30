@@ -2,6 +2,8 @@
 
 <div class='paper-box-text' style="font-size: larger;" markdown="1">
 
+- [06/2026] 🎉 One paper gets accepted by ECCV 2026.
+- [06/2026] I will serve as a reviewer for AAAI 2027.
 - [05/2026] 🎉 One paper gets accepted by ICML 2026.
 - [02/2026] 🎉 One paper gets accepted by CVPR 2026.
 - [01/2026] 🎉 One paper gets accepted by ICASSP 2026 (Oral).

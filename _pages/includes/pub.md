@@ -3,6 +3,18 @@
 <!-- ## 🎙 Speech Synthesis -->
 
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/mosve.png' alt="Mixture of Specialized Vision Experts framework" width="100%"></div></div>
+<div class='paper-box-text' style="font-size: larger;" markdown="1">
+
+**Mixture of Specialized Vision Experts: Unlocking Complementary Visual Insights for Faithful MLLM Reasoning**
+
+Yifei Gao, Liangliang You, Jiye Xie, Changwei Wang, Kexue Fu, **Jingyi Liu**, Rongtao Xu, Zhiqiang Kou, Haoran Xu, Longxiang Gao, Yu Zhang \\
+European Conference on Computer Vision (**ECCV**), 2026. (CCF-B)
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/nova.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' style="font-size: larger;" markdown="1">
 
@@ -46,4 +58,3 @@ The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026(**CVPR**
 
 </div>
 </div>
-
