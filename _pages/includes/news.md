@@ -2,6 +2,7 @@
 
 <div class='paper-box-text' style="font-size: larger;" markdown="1">
 
+- [08/2026] I will join BAAI as a World Model Research Intern.
 - [06/2026] 🎉 One paper gets accepted by ECCV 2026.
 - [06/2026] I will serve as a reviewer for AAAI 2027.
 - [05/2026] 🎉 One paper gets accepted by ICML 2026.

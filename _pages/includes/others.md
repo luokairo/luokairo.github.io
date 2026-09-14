@@ -39,8 +39,8 @@
 
 <div class='paper-box-text' style="font-size: larger;" markdown="1">
 
+- *2026.09 - Present*, World Model Research Intern, Beijing Academy of Artificial Intelligence (BAAI).
 - *2025.07 - 2025.10*, YITU, Shanghai.
 
 </div>
-
 
