@@ -7,7 +7,8 @@
 
 # Site Settings
 title                    : "Jingyi Liu (刘璟奕)"
-description              : "Undergraduate student of Tongji University. Interested in multimodal learning, visual generation, and efficient learning for large-scale models."
+description              : "Year-0 Ph.D. student at the Camera Intelligence Lab, Peking University. Research interests: world models, video generation, multimodal learning, and representation learning."
+url                      : "https://luokairo.github.io"
 repository               : "luokairo/luokairo.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -65,6 +66,7 @@ include:
   - _pages
   - files
 exclude:
+  - _pages/includes
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

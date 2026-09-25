@@ -1,0 +1,239 @@
+# Update this month when the homepage content changes (not on every build).
+last_updated: "2026-09"
+
+profile:
+  name:
+    en: Jingyi Liu
+    zh: 刘璟奕
+  alternate_name:
+    en: 刘璟奕
+    zh: Jingyi Liu
+  email: jingyi_liu@tongji.edu.cn
+  photo: /images/zj.jpg
+  lab_url: https://camera.pku.edu.cn/
+  github: https://github.com/luokairo
+  scholar: https://scholar.google.com/citations?user=17JDRQoAAAAJ&hl=zh-CN
+  zhihu: https://www.zhihu.com/people/luo-xiao-64-85-92
+
+ui:
+  en:
+    title: Jingyi Liu | Research
+    description: Year-0 Ph.D. student at the Camera Intelligence Lab, Peking University. Research interests include world models, video generation, multimodal learning, and representation learning.
+    skip: Skip to content
+    switch: Switch language
+    portrait: Portrait of Jingyi Liu
+    research: Research
+    news: News
+    publications: Publications
+    education: Education
+    internships: Internships
+    awards: Honors and Awards
+    older_news: More news
+    paper: Paper
+    view_figure: View full-size figure (opens in a new tab)
+    project: Project
+    email: Email
+    scholar: Scholar
+    last_updated: Last updated
+    inspiration: Design inspired by Jon Barron's homepage.
+  zh:
+    title: 刘璟奕 | 研究主页
+    description: 北京大学相机智能实验室博士第 0 年学生，研究兴趣包括世界模型、视频生成、多模态学习与表征学习。
+    skip: 跳转到正文
+    switch: 切换语言
+    portrait: 刘璟奕的照片
+    research: 研究方向
+    news: 最新动态
+    publications: 论文
+    education: 教育经历
+    internships: 实习经历
+    awards: 荣誉奖励
+    older_news: 更多动态
+    paper: 论文
+    view_figure: 查看原尺寸配图（在新标签页打开）
+    project: 项目
+    email: 邮箱
+    scholar: 谷歌学术
+    last_updated: 最后更新
+    inspiration: 页面设计参考 Jon Barron 的个人主页。
+
+news:
+  - date: 2026-09
+    en: I joined BAAI as a World Model Research Intern.
+    zh: 我加入北京智源人工智能研究院，担任世界模型研究实习生。
+  - date: 2026-06
+    en: One paper was accepted to ECCV 2026.
+    zh: 一篇论文被 ECCV 2026 接收。
+  - date: 2026-06
+    en: I will serve as a reviewer for AAAI 2027.
+    zh: 我将担任 AAAI 2027 审稿人。
+  - date: 2026-05
+    en: One paper was accepted to ICML 2026.
+    zh: 一篇论文被 ICML 2026 接收。
+  - date: 2026-02
+    en: One paper was accepted to CVPR 2026.
+    zh: 一篇论文被 CVPR 2026 接收。
+  - date: 2026-01
+    en: One paper was accepted to ICASSP 2026 (Oral).
+    zh: 一篇论文被 ICASSP 2026 接收，并入选口头报告。
+  - date: 2025-11
+    en: I was awarded the Fan Linhu Petroleum Scholarship.
+    zh: 我获得范林湖石油奖学金。
+  - date: 2025-10
+    en: I was awarded the National Scholarship.
+    zh: 我获得国家奖学金。
+  - date: 2025-10
+    en: I served as a reviewer for CVPR 2026.
+    zh: 我担任 CVPR 2026 审稿人。
+  - date: 2025-09
+    en: I served as a reviewer for ICASSP 2026.
+    zh: 我担任 ICASSP 2026 审稿人。
+  - date: 2025-07
+    en: I served as a reviewer for AAAI 2026.
+    zh: 我担任 AAAI 2026 审稿人。
+
+publications:
+  - title: 'Mixture of Specialized Vision Experts: Unlocking Complementary Visual Insights for Faithful MLLM Reasoning'
+    image: /images/mosve.png
+    venue: ECCV 2026
+    article_url: https://link.springer.com/chapter/10.1007/978-3-032-37023-5_2
+    summary:
+      en: MoSVE combines complementary visual experts to reduce hallucinations and improve visually grounded reasoning in multimodal large language models.
+      zh: MoSVE 融合不同视觉专家的互补信息，减少多模态大语言模型的幻觉，提升基于视觉证据的推理能力。
+    authors:
+      - Yifei Gao
+      - Liangliang You
+      - Jiye Xie
+      - Changwei Wang
+      - Kexue Fu
+      - name: Jingyi Liu
+        self: true
+      - Rongtao Xu
+      - Zhiqiang Kou
+      - Haoran Xu
+      - Longxiang Gao
+      - Yu Zhang
+  - title: Adaptive Visual Autoregressive Acceleration via Dual-Linkage Entropy Analysis
+    image: /images/nova.png
+    venue: ICML 2026
+    article_url: https://arxiv.org/abs/2602.01345
+    paper_url: https://arxiv.org/pdf/2602.01345
+    summary:
+      en: NOVA accelerates visual autoregressive generation without additional training, using entropy-guided token reduction across scales and layers together with residual caching.
+      zh: NOVA 通过跨尺度、跨层的熵引导 token 精简与残差缓存，无需额外训练即可加速视觉自回归生成。
+    authors:
+      - Yu Zhang
+      - name: Jingyi Liu
+        self: true
+        mark: '†'
+      - Feng Liu
+      - name: Duoqian Miao
+        mark: '*'
+      - Qi Zhang
+      - Kexue Fu
+      - Changwei Wang
+      - Longbing Cao
+    notes:
+      en: '† Project Lead · * Corresponding Author'
+      zh: '† 项目负责人 · * 通讯作者'
+  - title: 'Markovian Scale Prediction: A New Era of Visual Autoregressive Generation'
+    image: /images/markovvar.png
+    venue: CVPR 2026
+    article_url: https://arxiv.org/abs/2511.23334
+    paper_url: https://arxiv.org/pdf/2511.23334
+    project_url: https://luokairo.github.io/markov-var-page/
+    summary:
+      en: Markov-VAR reformulates scale prediction as a Markov process, using a compact history vector to reduce reliance on full context, lowering memory usage while further improving generation quality.
+      zh: Markov-VAR 将尺度预测建模为马尔可夫过程，以紧凑的历史向量减少对完整上下文的依赖，在降低显存开销的同时进一步提升生成质量。
+    authors:
+      - Yu Zhang
+      - name: Jingyi Liu
+        self: true
+        mark: '†'
+      - Yiwei Shi
+      - Qi Zhang
+      - name: Duoqian Miao
+        mark: '*'
+      - Changwei Wang
+      - Longbing Cao
+    notes:
+      en: '† Project Lead · * Corresponding Author'
+      zh: '† 项目负责人 · * 通讯作者'
+  - title: Enhancing Quantization for Visual AutoRegressive Generation via Uncertainty Identification
+    image: /images/eq.png
+    venue: ICASSP 2026
+    distinction:
+      en: Oral
+      zh: 口头报告
+    article_url: https://doi.org/10.1109/ICASSP55912.2026.11462147
+    # Keep this description at the scope supported by the title and local method figure.
+    summary:
+      en: This work explores uncertainty-aware quantization for visual autoregressive generation, using entropy to identify uncertain prediction scales.
+      zh: 这项工作探索面向视觉自回归生成的不确定性感知量化，利用熵识别预测中具有较高不确定性的尺度。
+    authors:
+      - name: Jingyi Liu
+        self: true
+      - Guangyao Xiong
+      - name: Shuxia Ren
+        mark: '†'
+      - Ruoyang Gao
+      - Linkun Yu
+      - Kexue Fu
+    notes:
+      en: '† Corresponding Author'
+      zh: '† 通讯作者'
+
+education:
+  - institution:
+      en: Peking University · Camera Intelligence Lab
+      zh: 北京大学 · 相机智能实验室
+    url: https://camera.pku.edu.cn/
+    degree:
+      en: Year-0 Ph.D. student · advised by Prof. Boxin Shi
+      zh: 博士第 0 年 · 导师：施柏鑫教授
+    date:
+      en: 'Program start: September 2027'
+      zh: 正式入学：2027 年 9 月
+  - institution:
+      en: Tongji University · School of Ocean and Earth Science
+      zh: 同济大学 · 海洋与地球科学学院
+    degree:
+      en: Undergraduate · Marine Technology major, Computer Science and Technology minor
+      zh: 本科 · 海洋技术专业，计算机科学与技术辅修
+    date:
+      en: September 2023 – Present
+      zh: 2023 年 9 月至今
+
+internships:
+  - organization:
+      en: Beijing Academy of Artificial Intelligence (BAAI)
+      zh: 北京智源人工智能研究院（BAAI）
+    role:
+      en: World Model Research Intern
+      zh: 世界模型研究实习生
+    date:
+      en: September 2026 – Present
+      zh: 2026 年 9 月至今
+  - organization:
+      en: YITU, Shanghai
+      zh: 依图科技，上海
+    role:
+      en: Algorithm Intern
+      zh: 算法实习生
+    date:
+      en: July 2025 – October 2025
+      zh: 2025 年 7 月至 10 月
+
+awards:
+  - en: National Scholarship (2025)
+    zh: 国家奖学金（2025）
+  - en: Fan Linhu Petroleum Scholarship (2025, Top 2%)
+    zh: 范林湖石油奖学金（2025，前 2%）
+  - en: Tongji University Geophysics Scholarship (2024, Top 5%)
+    zh: 同济大学地球物理奖学金（2024，前 5%）
+  - en: First Prize, National Finals of Global Campus AI Algorithm Competition (2024)
+    zh: 全球校园人工智能算法精英大赛全国总决赛一等奖（2024）
+  - en: Second Prize, National AI Application Innovation Challenge (2024)
+    zh: 全国人工智能应用创新挑战赛二等奖（2024）
+  - en: Second Prize, 15th National College Mathematics Competition (2023)
+    zh: 第十五届全国大学生数学竞赛二等奖（2023）

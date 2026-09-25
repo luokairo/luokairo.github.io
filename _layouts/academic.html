@@ -1,0 +1,141 @@
+<!doctype html>
+{% assign lang = page.lang | default: 'en' %}
+{% assign home = site.data.home %}
+{% assign ui = home.ui[lang] %}
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <title>{{ ui.title | escape }}</title>
+    <meta name="description" content="{{ ui.description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+    <link rel="alternate" hreflang="zh" href="{{ '/zh/' | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Jingyi Liu (刘璟奕)">
+    <meta property="og:locale" content="{% if lang == 'zh' %}zh_CN{% else %}en_US{% endif %}">
+    <meta property="og:title" content="{{ ui.title | escape }}">
+    <meta property="og:description" content="{{ ui.description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ home.profile.photo | absolute_url }}">
+    <link rel="apple-touch-icon" href="{{ '/images/site-icon.jpg' | relative_url }}">
+    <link rel="icon" type="image/jpeg" href="{{ '/images/site-icon.jpg' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+    <script src="{{ '/assets/js/academic.js' | relative_url }}" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">{{ ui.skip }}</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="language-switch" aria-label="{{ ui.switch }}">
+          <a href="{{ '/' | relative_url }}" data-language-link="{{ '/' | relative_url }}" lang="en" {% if lang == 'en' %}aria-current="page"{% endif %}>EN</a>
+          <span aria-hidden="true">/</span>
+          <a href="{{ '/zh/' | relative_url }}" data-language-link="{{ '/zh/' | relative_url }}" lang="zh" {% if lang == 'zh' %}aria-current="page"{% endif %}>中文</a>
+        </nav>
+      </header>
+
+      <main id="main-content">
+        <span class="legacy-anchor" id="about-me" aria-hidden="true"></span>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <h1 id="page-title">{{ home.profile.name[lang] }} <span class="alternate-name" lang="{% if lang == 'zh' %}en{% else %}zh{% endif %}">({{ home.profile.alternate_name[lang] }})</span></h1>
+            {% if lang == 'zh' %}
+              <p>我是<a href="{{ home.profile.lab_url }}" target="_blank" rel="noopener noreferrer">北京大学相机智能实验室</a>的博士第 0 年学生，主要研究视频生成与世界模型，导师为施柏鑫教授。</p>
+              <p>我近期正在开展自回归视频生成相关研究。</p>
+              <p>我欢迎相关领域的学术交流与合作，您可以通过<a href="mailto:{{ home.profile.email }}">邮箱</a>联系我。业余时间，我喜欢游泳和摄影。</p>
+            {% else %}
+              <p>I am a year-0 Ph.D. student at the <a href="{{ home.profile.lab_url }}" target="_blank" rel="noopener noreferrer">Camera Intelligence Lab, Peking University</a>, advised by Prof. Boxin Shi. My research focuses on video generation and world models.</p>
+              <p>I am currently working on autoregressive video generation.</p>
+              <p>I welcome research discussions and collaborations—please feel free to reach out via <a href="mailto:{{ home.profile.email }}">email</a>. Outside research, I enjoy swimming and photography.</p>
+            {% endif %}
+            <div class="profile-links" aria-label="{% if lang == 'zh' %}联系方式与个人链接{% else %}Contact and profile links{% endif %}">
+              <a href="mailto:{{ home.profile.email }}">{{ ui.email }}</a>
+              <a href="{{ home.profile.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="{{ home.profile.scholar }}" target="_blank" rel="noopener noreferrer">{{ ui.scholar }}</a>
+              <a href="{{ home.profile.zhihu }}" target="_blank" rel="noopener noreferrer">知乎</a>
+            </div>
+          </div>
+          <div class="portrait-frame"><img class="portrait" src="{{ home.profile.photo | relative_url }}" width="2000" height="2000" alt="{{ ui.portrait }}" fetchpriority="high"></div>
+        </section>
+
+        <section class="content-section" id="research" aria-labelledby="research-heading">
+          <h2 id="research-heading">{{ ui.research }}</h2>
+          <p class="research-intro">{% if lang == 'zh' %}我的研究兴趣包括世界模型、视频生成、多模态学习与表征学习。{% else %}My research interests include world models, video generation, multimodal learning, and representation learning.{% endif %}</p>
+        </section>
+
+        <span class="legacy-anchor" id="-news" aria-hidden="true"></span>
+        <section class="content-section" id="news" aria-labelledby="news-heading">
+          <h2 id="news-heading">{{ ui.news }}</h2>
+          <ul class="news-list">
+            {% for item in home.news limit:4 %}
+              <li><time datetime="{{ item.date }}">{% if lang == 'zh' %}{{ item.date | replace: '-', '.' }}{% else %}{{ item.date | append: '-01' | date: '%b %Y' }}{% endif %}</time><span>{{ item[lang] }}</span></li>
+            {% endfor %}
+          </ul>
+          <details class="more-news">
+            <summary>{{ ui.older_news }}</summary>
+            <ul class="news-list">
+              {% for item in home.news offset:4 %}
+                <li><time datetime="{{ item.date }}">{% if lang == 'zh' %}{{ item.date | replace: '-', '.' }}{% else %}{{ item.date | append: '-01' | date: '%b %Y' }}{% endif %}</time><span>{{ item[lang] }}</span></li>
+              {% endfor %}
+            </ul>
+          </details>
+        </section>
+
+        <span class="legacy-anchor" id="-publications" aria-hidden="true"></span>
+        <section class="content-section" id="publications" aria-labelledby="publications-heading">
+          <h2 id="publications-heading">{{ ui.publications }}</h2>
+          <div class="publications-list">
+            {% for paper in home.publications %}
+              <article class="publication">
+                <a class="publication-image" href="{{ paper.image | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ ui.view_figure }}: {{ paper.title | escape }}"><img src="{{ paper.image | relative_url }}" alt="{{ paper.title | escape }}" loading="lazy"></a>
+                <div class="publication-copy">
+                  <h3>{% if paper.article_url %}<a href="{{ paper.article_url }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
+                  <p class="authors">{% for author in paper.authors %}{% if author.name %}{% if author.self %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% if author.mark %}<sup>{{ author.mark }}</sup>{% endif %}{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+                  <p class="venue">{{ paper.venue }}{% if paper.distinction %} <span class="distinction">· {{ paper.distinction[lang] }}</span>{% endif %}</p>
+                  {% if paper.notes %}<p class="author-notes">{{ paper.notes[lang] }}</p>{% endif %}
+                  {% if paper.paper_url or paper.project_url %}
+                    <p class="paper-links">{% if paper.paper_url %}<a href="{{ paper.paper_url }}" target="_blank" rel="noopener noreferrer">{{ ui.paper }}</a>{% endif %}{% if paper.project_url %}<a href="{{ paper.project_url }}">{{ ui.project }}</a>{% endif %}</p>
+                  {% endif %}
+                  {% if paper.summary %}<p class="paper-summary">{{ paper.summary[lang] }}</p>{% endif %}
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        </section>
+
+        <span class="legacy-anchor" id="-educations" aria-hidden="true"></span>
+        <section class="content-section" id="education" aria-labelledby="education-heading">
+          <h2 id="education-heading">{{ ui.education }}</h2>
+          <div class="resume-list">
+            {% for item in home.education %}
+              <div class="resume-entry"><div><h3>{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.institution[lang] }}</a>{% else %}{{ item.institution[lang] }}{% endif %}</h3><p>{{ item.degree[lang] }}</p></div><p class="resume-date">{{ item.date[lang] }}</p></div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <span class="legacy-anchor" id="-internships" aria-hidden="true"></span>
+        <section class="content-section" id="internships" aria-labelledby="internships-heading">
+          <h2 id="internships-heading">{{ ui.internships }}</h2>
+          <div class="resume-list">
+            {% for item in home.internships %}
+              <div class="resume-entry"><div><h3>{{ item.organization[lang] }}</h3>{% if item.role %}<p>{{ item.role[lang] }}</p>{% endif %}</div><p class="resume-date">{{ item.date[lang] }}</p></div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <span class="legacy-anchor" id="-honors-and-awards" aria-hidden="true"></span>
+        <section class="content-section" id="awards" aria-labelledby="awards-heading">
+          <h2 id="awards-heading">{{ ui.awards }}</h2>
+          <ul class="awards-list">{% for item in home.awards %}<li>{{ item[lang] }}</li>{% endfor %}</ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>{{ ui.last_updated }}: <time datetime="{{ home.last_updated }}">{% if lang == 'zh' %}{{ home.last_updated | append: '-01' | date: '%Y 年 %-m 月' }}{% else %}{{ home.last_updated | append: '-01' | date: '%B %Y' }}{% endif %}</time></p>
+        <p><a href="https://jonbarron.info/" target="_blank" rel="noopener noreferrer">{{ ui.inspiration }}</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
