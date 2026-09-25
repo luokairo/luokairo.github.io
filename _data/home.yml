@@ -38,7 +38,7 @@ ui:
     inspiration: Design inspired by Jon Barron's homepage.
   zh:
     title: 刘璟奕 | 研究主页
-    description: 北京大学相机智能实验室博士第 0 年学生，研究兴趣包括世界模型、视频生成、多模态学习与表征学习。
+    description: 北京大学相机智能实验室博士0年级学生，研究兴趣包括世界模型、视频生成、多模态学习与表征学习。
     skip: 跳转到正文
     switch: 切换语言
     portrait: 刘璟奕的照片
@@ -78,7 +78,7 @@ news:
     zh: 一篇论文被 ICASSP 2026 接收，并入选口头报告。
   - date: 2025-11
     en: I was awarded the Fan Linhu Petroleum Scholarship.
-    zh: 我获得范林湖石油奖学金。
+    zh: 我获得范林虎石油奖学金。
   - date: 2025-10
     en: I was awarded the National Scholarship.
     zh: 我获得国家奖学金。
@@ -120,7 +120,7 @@ publications:
     paper_url: https://arxiv.org/pdf/2602.01345
     summary:
       en: NOVA accelerates visual autoregressive generation without additional training, using entropy-guided token reduction across scales and layers together with residual caching.
-      zh: NOVA 通过跨尺度、跨层的熵引导 token 精简与残差缓存，无需额外训练即可加速视觉自回归生成。
+      zh: NOVA 通过跨尺度、跨层的熵引导 token 剪枝，无需额外训练即可加速视觉自回归生成。
     authors:
       - Yu Zhang
       - name: Jingyi Liu
@@ -144,7 +144,7 @@ publications:
     project_url: https://luokairo.github.io/markov-var-page/
     summary:
       en: Markov-VAR reformulates scale prediction as a Markov process, using a compact history vector to reduce reliance on full context, lowering memory usage while further improving generation quality.
-      zh: Markov-VAR 将尺度预测建模为马尔可夫过程，以紧凑的历史向量减少对完整上下文的依赖，在降低显存开销的同时进一步提升生成质量。
+      zh: Markov-VAR 将尺度预测建模为马尔可夫过程，以紧凑的历史信息减少对完整上下文的依赖，在降低显存开销的同时进一步提升生成质量。
     authors:
       - Yu Zhang
       - name: Jingyi Liu
@@ -169,7 +169,7 @@ publications:
     # Keep this description at the scope supported by the title and local method figure.
     summary:
       en: This work explores uncertainty-aware quantization for visual autoregressive generation, using entropy to identify uncertain prediction scales.
-      zh: 这项工作探索面向视觉自回归生成的不确定性感知量化，利用熵识别预测中具有较高不确定性的尺度。
+      zh: EQ 探索面向视觉自回归生成的不确定性感知量化，利用熵识别预测中具有较高不确定性的尺度。
     authors:
       - name: Jingyi Liu
         self: true
@@ -199,7 +199,7 @@ education:
       zh: 同济大学 · 海洋与地球科学学院
     degree:
       en: Undergraduate · Marine Technology major, Computer Science and Technology minor
-      zh: 本科 · 海洋技术专业，计算机科学与技术辅修
+      zh: 本科 · 海洋技术，计算机科学与技术（辅修）
     date:
       en: September 2023 – Present
       zh: 2023 年 9 月至今
@@ -216,7 +216,7 @@ internships:
       zh: 2026 年 9 月至今
   - organization:
       en: YITU, Shanghai
-      zh: 依图科技，上海
+      zh: 依图科技
     role:
       en: Algorithm Intern
       zh: 算法实习生
@@ -228,7 +228,7 @@ awards:
   - en: National Scholarship (2025)
     zh: 国家奖学金（2025）
   - en: Fan Linhu Petroleum Scholarship (2025, Top 2%)
-    zh: 范林湖石油奖学金（2025，前 2%）
+    zh: 范林虎石油奖学金（2025，前 2%）
   - en: Tongji University Geophysics Scholarship (2024, Top 5%)
     zh: 同济大学地球物理奖学金（2024，前 5%）
   - en: First Prize, National Finals of Global Campus AI Algorithm Competition (2024)

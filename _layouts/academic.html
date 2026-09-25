@@ -42,8 +42,7 @@
           <div class="hero-copy">
             <h1 id="page-title">{{ home.profile.name[lang] }} <span class="alternate-name" lang="{% if lang == 'zh' %}en{% else %}zh{% endif %}">({{ home.profile.alternate_name[lang] }})</span></h1>
             {% if lang == 'zh' %}
-              <p>我是<a href="{{ home.profile.lab_url }}" target="_blank" rel="noopener noreferrer">北京大学相机智能实验室</a>的博士第 0 年学生，主要研究视频生成与世界模型，导师为施柏鑫教授。</p>
-              <p>我近期正在开展自回归视频生成相关研究。</p>
+              <p>我目前是<a href="{{ home.profile.lab_url }}" target="_blank" rel="noopener noreferrer">北京大学相机智能实验室</a>的博士0年级学生，主要研究视频生成与世界模型，导师为施柏鑫教授。我近期正在开展自回归视频生成相关研究。</p>
               <p>我欢迎相关领域的学术交流与合作，您可以通过<a href="mailto:{{ home.profile.email }}">邮箱</a>联系我。业余时间，我喜欢游泳和摄影。</p>
             {% else %}
               <p>I am a year-0 Ph.D. student at the <a href="{{ home.profile.lab_url }}" target="_blank" rel="noopener noreferrer">Camera Intelligence Lab, Peking University</a>, advised by Prof. Boxin Shi. My research focuses on video generation and world models.</p>
@@ -54,7 +53,7 @@
               <a href="mailto:{{ home.profile.email }}">{{ ui.email }}</a>
               <a href="{{ home.profile.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href="{{ home.profile.scholar }}" target="_blank" rel="noopener noreferrer">{{ ui.scholar }}</a>
-              <a href="{{ home.profile.zhihu }}" target="_blank" rel="noopener noreferrer">知乎</a>
+              <a href="{{ home.profile.zhihu }}" target="_blank" rel="noopener noreferrer">{% if lang == 'zh' %}zhihu{% else %}知乎{% endif %}</a>
             </div>
           </div>
           <div class="portrait-frame"><img class="portrait" src="{{ home.profile.photo | relative_url }}" width="2000" height="2000" alt="{{ ui.portrait }}" fetchpriority="high"></div>
@@ -62,7 +61,7 @@
 
         <section class="content-section" id="research" aria-labelledby="research-heading">
           <h2 id="research-heading">{{ ui.research }}</h2>
-          <p class="research-intro">{% if lang == 'zh' %}我的研究兴趣包括世界模型、视频生成、多模态学习与表征学习。{% else %}My research interests include world models, video generation, multimodal learning, and representation learning.{% endif %}</p>
+          <p class="research-intro">{% if lang == 'zh' %}我的研究兴趣包括：世界模型、视频生成、多模态学习与表征学习等。{% else %}My research interests include world models, video generation, multimodal learning, and representation learning.{% endif %}</p>
         </section>
 
         <span class="legacy-anchor" id="-news" aria-hidden="true"></span>
